@@ -10,8 +10,12 @@ $gray-darker: #333;
 $black: black;
 
 // Project
-$green: #35aa4d;
-$blue: #4180c7;
+$green-light: #3FD03F;
+$green: #35AA4E;
+$green-dark: #2B8A31;
+$blue-light: #68A2E3;
+$blue: #4180C7;
+$blue-dark: #0C62C2;
 
 // Styleguide
 .sg-colors {
@@ -28,6 +32,7 @@ $blue: #4180c7;
 .sg-colors__color {
   padding: 4rem;
 
+  // Grayscale
   &--white {
     background-color: $white;
   }
@@ -64,12 +69,27 @@ $blue: #4180c7;
     background-color: $black;
   }
 
+  // Branding
+  &--green-light {
+    background-color: $green-light;
+  }
+
   &--green {
     background-color: $green;
   }
 
+  &--green-dark {
+    background-color: $green-dark;
+  }
+
+  &--blue-light {
+    background-color: $blue-light;
+  }
   &--blue {
     background-color: $blue;
+  }
+  &--blue-dark {
+    background-color: $blue-dark;
   }
 }
 
