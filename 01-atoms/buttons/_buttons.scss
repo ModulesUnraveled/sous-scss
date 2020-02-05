@@ -1,4 +1,9 @@
-@mixin button($bg:$black, $color:$white, $hoverBg: $gray, $hoverColor: $white) {
+@mixin button(
+  $bg: $blue,
+  $color: $white,
+  $hoverBg: darken($bg, 10%),
+  $hoverColor: $white
+) {
   background-color: $bg;
   border: none;
   color: $color;
@@ -8,7 +13,6 @@
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
 
   &:visited {
     color: $color;
@@ -20,31 +24,30 @@
 }
 
 @mixin button-alt {
-  @include button($gray, $white, $black);
-
   font-weight: 600;
   font-size: 0.7rem;
-  padding: 0.4em 0.6em 0.3em;
 }
 
 @mixin button-alt-2 {
-  @include button($gray-lightest, $black, $gray-lighter);
-
   font-size: 0.8rem;
   font-weight: 600;
-  text-transform: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .button {
   @include button;
 
   &--alt {
-    @include button;
+    @include button($orange);
     @include button-alt;
   }
 
   &--alt-2 {
-    @include button;
+    @include button($green);
     @include button-alt-2;
   }
 }
