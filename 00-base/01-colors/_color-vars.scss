@@ -10,12 +10,16 @@ $gray-darker: #333;
 $black: black;
 
 // Project
-$green-light: #3FD03F;
-$green: #35AA4E;
-$green-dark: #2B8A31;
-$blue-light: #68A2E3;
-$blue: #4180C7;
-$blue-dark: #0C62C2;
+$green-light: #3fd03f;
+$green: #35aa4e;
+$green-dark: #2b8a31;
+$blue-light: #68a2e3;
+$blue: #4180c7;
+$blue-dark: #0c62c2;
+$yellow: #ecdf13;
+$yellow-dark: #d8cb01;
+$orange: #fd880b;
+$orange-dark: #d86601;
 
 // Styleguide
 .sg-colors {
@@ -85,11 +89,29 @@ $blue-dark: #0C62C2;
   &--blue-light {
     background-color: $blue-light;
   }
+
   &--blue {
     background-color: $blue;
   }
+
   &--blue-dark {
     background-color: $blue-dark;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--yellow-dark {
+    background-color: $yellow-dark;
+  }
+
+  &--orange {
+    background-color: $orange;
+  }
+
+  &--orange-dark {
+    background-color: $orange-dark;
   }
 }
 
