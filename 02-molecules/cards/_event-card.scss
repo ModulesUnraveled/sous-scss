@@ -1,5 +1,6 @@
 $break-event-card--max: max-width 719px;
 $break-event-card: $medium; // $medium = 720px
+$event-card--border: 2px solid $gray-lighter;
 
 .event-card {
   @include space-inset-m;
@@ -7,26 +8,32 @@ $break-event-card: $medium; // $medium = 720px
   display: flex;
   flex-flow: column nowrap;
   color: $gray-darker;
-  border: 2px solid $gray-lighter;
+  border: $event-card--border;
 
-  @include breakpoint($break-event-card) {
-    flex-direction: row;
+  &--list {
+    @include breakpoint($break-event-card) {
+      flex-direction: row;
+    }
   }
 
   &__content {
     order: 1;
+    flex: 1 1 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: flex-start;
 
-    > *:not(:last-child) {
-      margin: 0 0 0.5em;
+    &--list {
+      @include breakpoint($break-event-card) {
+        flex: 0 1 40%;
+      }
     }
+  }
 
-    @include breakpoint($break-event-card) {
-      flex: 0 1 40%;
-    }
+  &__content-top {
+    width: 100%;
+    border-bottom: $event-card--border;
   }
 
   &__heading {
@@ -42,14 +49,6 @@ $break-event-card: $medium; // $medium = 720px
     }
   }
 
-  &__location {
-    //
-  }
-
-  &__body {
-    //
-  }
-
   &__link {
     @include button;
 
@@ -58,18 +57,19 @@ $break-event-card: $medium; // $medium = 720px
   }
 
   &__meta {
+    @include space-stack-m;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 
-    @include breakpoint($break-event-card--max) {
-      @include space-stack-m;
-    }
+    &--list {
+      @include breakpoint($break-event-card) {
+        @include space-stack-none;
+        @include space-inline-m;
 
-    @include breakpoint($break-event-card) {
-      @include space-inline-m;
-
-      flex: 1 1 60%;
+        flex: 1 1 60%;
+      }
     }
 
     &--bottom {
@@ -81,7 +81,7 @@ $break-event-card: $medium; // $medium = 720px
   }
 
   &__image {
-    box-shadow: 10px 10px 60px 0px rgba($black, 0.75);
+    box-shadow: 10px 10px 30px 0px rgba($black, 0.75);
   }
 
   &__date {
@@ -92,10 +92,12 @@ $break-event-card: $medium; // $medium = 720px
   &__day {
     font-size: 4rem;
     line-height: 1;
+    color: $gray-light;
   }
 
   &__month {
     font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
   }
 

@@ -1,3 +1,7 @@
 @mixin space-stack-m {
   margin-bottom: 1rem;
 }
+
+@mixin space-stack-none {
+  margin-bottom: 0;
+}
