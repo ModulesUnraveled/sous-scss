@@ -1,0 +1,15 @@
+@mixin list-item {
+  &:not(:last-child) {
+    @include space-stack-m;
+  }
+}
+
+.list__item {
+  @include list-item;
+
+  /* This is just for the pattern library example */
+  &--example {
+    background-color: $gray-lighter;
+    padding: $space-quadruple;
+  }
+}
