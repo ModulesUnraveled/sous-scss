@@ -111,18 +111,11 @@ $event-card--border: 2px solid $gray-lighter;
       margin-bottom: $space-one-fourth;
     }
 
-    &__link {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      text-decoration: none;
-      color: $black;
-    }
-
     &__icon {
       height: 1.5rem;
       width: 1.5rem;
       margin-right: $space-one-half;
+      color: $gray;
     }
 
     &__text {
