@@ -7,6 +7,7 @@ $break-event-card: $medium; // $medium = 720px
   display: flex;
   flex-flow: column nowrap;
   color: $gray-darker;
+  border: 2px solid $gray-lighter;
 
   @include breakpoint($break-event-card) {
     flex-direction: row;
