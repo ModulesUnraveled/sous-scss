@@ -1,9 +1,15 @@
-$color-breadcrumb: $gray-dark;
-$color-breadcrumb-hover: $gray-darker;
-$color-breadcrumb-active: $gray;
+$color-breadcrumb: $gray-lightest;
+$color-breadcrumb-hover: $gray-lighter;
+$color-breadcrumb-active: $white;
+$color-breadcrumb-bg: $blue-dark;
+
+.breadcrumb__wrapper {
+  background-color: $color-breadcrumb-bg;
+}
 
 .breadcrumb {
   @include list-reset;
+  @include wrapper;
 }
 
 .breadcrumb__item,
@@ -24,14 +30,14 @@ $color-breadcrumb-active: $gray;
   font-size: 0.75rem;
 
   &::after {
-    content: "/";
+    content: '/';
   }
 
   &:last-child {
     color: $color-breadcrumb-active;
 
     &::after {
-      content: "";
+      content: '';
     }
   }
 }

@@ -1,14 +1,7 @@
 .header {
-  margin-bottom: 4em;
-
-  &__inner {
-    @include wrapper;
-
-    display: flex;
-    flex-flow: column nowrap;
-  }
-
   &__primary {
+    @include wrapper($v-padding: $space, $h-padding: $space);
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
