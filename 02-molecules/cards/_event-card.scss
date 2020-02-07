@@ -37,7 +37,7 @@ $event-card--border: 2px solid $gray-lighter;
   }
 
   &__heading {
-    @include heading-medium();
+    @include heading-medium;
 
     &-link {
       color: inherit;
@@ -47,6 +47,10 @@ $event-card--border: 2px solid $gray-lighter;
         text-decoration: underline;
       }
     }
+  }
+
+  &__location {
+    @include heading-xs;
   }
 
   &__link {
