@@ -15,6 +15,10 @@ $color-news--highlight-base: $white;
     @include space-inset-l;
 
     order: 1;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
   }
 
   &__heading {
@@ -48,6 +52,8 @@ $color-news--highlight-base: $white;
       $bg: $color-news--highlight-accent,
       $color: $color-news--highlight-base
     );
+
+    margin-top: auto;
   }
 
   &__meta {
