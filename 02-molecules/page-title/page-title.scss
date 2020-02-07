@@ -1,0 +1,13 @@
+.page-title__wrapper {
+  @include space-stack-m;
+
+  flex: 0 0 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: $orange-dark;
+}
+
+.page-title {
+  @include wrapper($v-padding: $space-double);
+
+  color: $white;
+}
