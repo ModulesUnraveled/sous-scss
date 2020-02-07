@@ -1,3 +1,7 @@
 @mixin space-inset-m {
-  padding: 1rem;
+  padding: $space;
+}
+
+@mixin space-inset-l {
+  padding: $space-and-half;
 }
