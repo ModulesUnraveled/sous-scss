@@ -1,34 +1,27 @@
-$background-image-xs: 34rem;
-
-$background-image-full: (
-  margin-left: calc(-50vw + 50%),
-  margin-right: calc(-50vw + 50%),
-);
-
-$background-image-contained: ();
-
-@mixin background-image($variation, $position: relative) {
-  position: $position;
-  margin-left: map-get($variation, margin-left);
-  margin-right: map-get($variation, margin-right);
-  height: 100%;
-  top: 0;
-  left: 0;
-  min-height: $background-image-xs;
-  background-size: cover;
-  background-position: center center;
-}
-
-.background-image-wrapper {
-  @include background-image($variation: $background-image-full);
-}
-
+// This css is paired with the js in `background-image.js` to allow us
+// to use fully responsive background images that are not possible with css alone.
+// Read that file for a little more detail.
 [data-responsive-background-image] {
   background-size: cover;
   background-position: center center;
-  padding-bottom: 56.25%; // 16:9 ratio
 }
 
-[data-responsive-background-image] img {
+[data-responsive-background-image--src] {
   display: none;
+}
+
+.cl-example {
+  [data-responsive-background-image] {
+    padding-bottom: 56.25%; // 16:9 ratio
+  }
+
+  .background-image--with-content {
+    @include space-inset-l;
+
+    div {
+      @include space-inset-m;
+
+      background-color: $gray-lightest;
+    }
+  }
 }
