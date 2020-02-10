@@ -1,13 +1,27 @@
 .hero {
-  @include space-inset-l;
+  @include space-stack-m;
 
+  flex: 0 0 100vw;
+  margin-left: calc(-50vw + 50%);
   min-height: 400px;
   display: flex;
   align-items: flex-end;
+  padding-bottom: $space;
 
   &__content {
+    @include wrapper;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__content-inner {
     @include space-inset-m;
 
     background-color: rgba($gray-lightest, 0.9);
+
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
 }
