@@ -1,0 +1,13 @@
+.hero {
+  @include space-inset-l;
+
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+
+  &__content {
+    @include space-inset-m;
+
+    background-color: rgba($gray-lightest, 0.9);
+  }
+}
