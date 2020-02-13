@@ -52,21 +52,15 @@ $main-menu-medium: $medium;
     height: auto;
     left: 0;
     overflow: visible;
-    padding: $space 0;
     position: absolute;
-    top: 55px;
+    top: 100%;
     width: 315px;
     z-index: 1;
     font-size: 0.9rem;
-    opacity: 0.6;
   }
 
   &:hover {
     @include medium {
-      opacity: 1;
-      background-color: $black;
-      transition: all 0.2s;
-
       .main-menu__link--sub {
         color: $gray-light;
 

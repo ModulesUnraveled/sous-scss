@@ -31,13 +31,14 @@
     &::after {
       color: $white;
       display: inline-block;
-      content: ">";
+      content: '>';
     }
 
     &--sub::after {
       display: none;
     }
-
+    &.active,
+    &:active,
     &:hover {
       color: $white;
 
