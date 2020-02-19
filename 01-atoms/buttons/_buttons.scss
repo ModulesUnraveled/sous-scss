@@ -1,5 +1,5 @@
 @mixin button(
-  $bg: $blue-dark,
+  $bg: color('primary-400'),
   $color: $white,
   $hoverBg: darken($bg, 10%),
   $hoverColor: $white
