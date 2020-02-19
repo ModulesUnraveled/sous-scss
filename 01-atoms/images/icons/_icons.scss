@@ -13,7 +13,7 @@ svg {
   }
 
   pre {
-    background-color: $near-white;
+    background-color: color('gray-200');
     font-size: 0.8rem;
     margin: 0;
     text-align: center;
@@ -21,6 +21,6 @@ svg {
 }
 
 .icons-demo__item {
-  border: 1px solid $near-white;
+  border: 1px solid color('gray-200');
   margin: $space-one-fourth;
 }

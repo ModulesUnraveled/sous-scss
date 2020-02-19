@@ -21,7 +21,7 @@
     div {
       @include space-inset-m;
 
-      background-color: $gray-lightest;
+      background-color: color('gray-300');
     }
   }
 }

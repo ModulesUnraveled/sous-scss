@@ -1,7 +1,7 @@
 .tabs__link,
 .tabs__link--local-tasks {
-  background-color: $near-white;
-  border: 1px solid $gray-lightest;
+  background-color: color('gray-200');
+  border: 1px solid color('gray-300');
   border-bottom: none;
   color: $gray;
   display: block;
@@ -13,7 +13,7 @@
   transition: color 0.3s;
 
   @include large {
-    border-bottom: 1px solid $gray-lightest;
+    border-bottom: 1px solid color('gray-300');
     border-left: none;
     display: inline-block;
     font-size: 1rem;
@@ -24,7 +24,7 @@
   }
 
   &:hover {
-    background-color: $gray-lightest;
+    background-color: color('gray-300');
     color: $gray-darker;
   }
 
@@ -35,7 +35,7 @@
 
     @include large {
       background-color: $white;
-      border: 1px solid $gray-lightest;
+      border: 1px solid color('gray-300');
       border-bottom: 1px solid $gray;
       border-left: none;
       color: $gray;

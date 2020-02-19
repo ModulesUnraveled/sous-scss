@@ -17,7 +17,7 @@
 
   /* This is just for the pattern library example */
   &--example {
-    background-color: $gray-lighter;
+    background-color: color('gray-400');
     padding: $space-quadruple;
   }
 }

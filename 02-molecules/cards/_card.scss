@@ -1,6 +1,7 @@
 .card__heading {
   @include heading-large($font-size: 1.5rem, $line-height: 1.3);
   @include no-bottom;
+
   margin-top: $space * 0.5;
 
   &-link {
@@ -34,6 +35,6 @@
 
 /* Variations */
 .card--bg {
-  background-color: $gray-lightest;
+  background-color: color('gray-300');
   padding: 1em;
 }

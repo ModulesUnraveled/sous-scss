@@ -45,7 +45,7 @@
       color: $white;
 
       &::after {
-        color: $gray-light;
+        color: color('gray-600');
       }
     }
   }
@@ -71,7 +71,7 @@
 }
 
 .main-menu--sub-2 {
-  background-color: $gray-lightest;
+  background-color: color('gray-300');
 }
 
 .main-menu__link--sub-2 {
