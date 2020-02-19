@@ -73,3 +73,7 @@ $outer-container-break: $small;
 .visually-hidden {
   @include visually-hidden;
 }
+
+@mixin color($value: 'primary-500') {
+  color: $value;
+}

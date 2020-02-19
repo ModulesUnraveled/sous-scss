@@ -7,18 +7,27 @@
 
 @mixin body-copy {
   font-family: $font-body;
-  font-size: 0.9rem;
-  line-height: 1.6em;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 body {
-  color: $gray;
-
   @include body-copy;
+
+  color: color('gray-800');
 }
 
 .paragraph {
   @include paragraph;
+
+  .lead {
+    display: block;
+
+    &::first-line {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .blockquote {

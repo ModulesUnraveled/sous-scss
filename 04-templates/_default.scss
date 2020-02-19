@@ -2,8 +2,8 @@
  * General Layout
 */
 
-$sidebar-width: 33%;
-$gutter: $space;
+$sidebar-width: 25%;
+$gutter: $space * 7;
 $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 
 /*

@@ -1,6 +1,44 @@
 .cta {
-  background-color: $gray-lightest;
+  background-color: color('gray-300');
   padding: $space-triple;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 2px;
+
+  &--home {
+    background: url('https://source.unsplash.com/PoE6Q48B-5k/1100x800')
+      no-repeat center center;
+    background-size: cover;
+    padding: 12rem 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      background: color('primary-transparent-600');
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+    }
+
+    h2 {
+      color: $white;
+    }
+
+    button {
+      background: color('warning-500');
+
+      &:hover {
+        background: color('warning-700');
+      }
+    }
+
+    h2,
+    button {
+      position: relative;
+      z-index: 10;
+    }
+  }
 }

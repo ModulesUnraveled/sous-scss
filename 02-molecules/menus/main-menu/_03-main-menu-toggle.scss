@@ -1,19 +1,26 @@
 /* Toggle */
 .toggle-expand {
   @include link;
+  color: color('gray-800');
+  align-self: stretch;
+
+  &:hover {
+    color: color('gray-600');
+  }
 
   @include medium {
     display: none;
   }
 
-  display: inline-block;
-  padding: $space;
+  display: flex;
+  padding: 0 $space;
   text-decoration: none;
-  width: 100%;
+  text-align: center;
+  width: 20vw;
 
   /* See main-menu.js */
   &--open {
-    background-color: $gray-dark;
+    background-color: color('gray-600');
   }
 }
 
@@ -21,6 +28,8 @@
   display: block;
   font-size: 0.9rem;
   font-weight: bold;
+  font-family: $font-heading;
+  line-height: 1;
 
   .toggle-expand--open & {
     color: $white;
@@ -37,6 +46,7 @@
 .toggle-expand__open {
   display: inline-block;
   text-align: center;
+  align-self: center;
 
   .toggle-expand--open & {
     display: none;
@@ -46,13 +56,14 @@
 .toggle-expand__close {
   display: none;
   text-align: center;
+  align-self: center;
 
   &::before {
     color: $white;
     content: 'X';
     display: block;
     font-size: 2.5rem;
-    line-height: 2;
+    line-height: 1.3;
   }
 
   .toggle-expand--open & {
