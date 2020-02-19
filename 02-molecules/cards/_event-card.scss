@@ -89,6 +89,10 @@ $break-event-card: $medium; // $medium = 720px
 
   &__image {
     box-shadow: 5px 5px 10px 5px rgba($black, 0.25);
+
+    img {
+      width: 100%;
+    }
   }
 
   &__date {
