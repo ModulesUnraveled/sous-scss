@@ -6,7 +6,7 @@ $break-event-card: $medium; // $medium = 720px
 
   display: flex;
   flex-flow: column nowrap;
-  color: color('gray-darker');
+  color: color('gray-900');
   box-shadow: 1px 1px 2px 2px rgba(black, 0.15);
 
   &:hover {
@@ -126,7 +126,7 @@ $break-event-card: $medium; // $medium = 720px
       height: 1.5rem;
       width: 1.5rem;
       margin-right: $space-one-half;
-      color: color('gray');
+      color: color('gray-700');
     }
 
     &__text {

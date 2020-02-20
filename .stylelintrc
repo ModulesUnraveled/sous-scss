@@ -6,13 +6,15 @@
   "rules": {
     "at-rule-no-unknown": [ true, {
       "ignoreAtRules": [
+        "content",
+        "each",
+        "extend",
+        "function",
+        "if",
+        "import",
         "include",
         "mixin",
-        "extend",
-        "if",
-        "each",
-        "content",
-        "import"
+        "return"
       ]
     }],
     "no-descending-specificity": null,

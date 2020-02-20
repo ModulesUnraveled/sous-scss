@@ -20,13 +20,13 @@
 .pager__link,
 .pager__link:link,
 .pager__link:visited {
-  color: color('gray');
+  color: color('gray-700');
   font-weight: 600;
   text-decoration: none;
 
   &.is-active,
   &:hover {
-    color: color('gray-dark');
+    color: color('gray-800');
   }
 }
 
@@ -39,7 +39,7 @@
   }
 
   &::before {
-    border: 8px solid color('gray');
+    border: 8px solid color('gray-700');
     border-bottom: 6px solid transparent;
     border-right: 7px solid transparent;
     border-top: 6px solid transparent;
@@ -51,7 +51,7 @@
 
   &:hover {
     &::before {
-      border-left-color: color('gray-dark');
+      border-left-color: color('gray-800');
     }
   }
 }
@@ -59,13 +59,13 @@
 .pager__link--prev {
   &::before {
     border-left-color: transparent;
-    border-right-color: color('gray');
+    border-right-color: color('gray-700');
   }
 
   &:hover {
     &::before {
       border-left-color: transparent;
-      border-right-color: color('gray-dark');
+      border-right-color: color('gray-800');
     }
   }
 }
