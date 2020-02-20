@@ -52,12 +52,9 @@ $color-news--highlight-base: color('white');
   }
 
   &__image {
-    .image {
+    img {
       border-radius: 2px 2px 0 0;
-
-      img {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 
