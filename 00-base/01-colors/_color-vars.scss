@@ -1,10 +1,10 @@
 $color: (
   // Grayscale
-    white: white,
-  gray: #666,
-  gray-dark: #4c4c4c,
-  gray-darker: #333,
-  black: black,
+    'white': white,
+  'gray': #666,
+  'gray-dark': #4c4c4c,
+  'gray-darker': #333,
+  'black': black,
   'primary-100': #c7e0f9,
   // 'primary-200': #92c0f4,
     'primary-300': #5992de,
@@ -96,12 +96,9 @@ $color: (
   //'gray-transparent-500': rgba(150, 158, 160, 0.4),
   'gray-transparent-600': rgba(150, 158, 160, 0.48),
   // Project,
-  green: #35aa4e,
-  orange: #fd880b
+  'green': #35aa4e,
+  'orange': #fd880b
 );
-
-$green: #35aa4e;
-$orange: #fd880b;
 
 // Define a function for easily selecting colors from the map
 @function color($value) {
