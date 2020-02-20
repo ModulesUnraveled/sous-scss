@@ -4,18 +4,19 @@ $main-menu-medium: $medium;
 /* Nav */
 .main-nav {
   display: none;
+  z-index: 1;
 
   @include medium {
     display: block;
   }
 
   &--open {
-    background-color: $white;
+    background-color: color('white');
     display: block;
     left: 0;
     overflow-y: scroll;
     position: absolute;
-    top: 134px;
+    top: 112px;
     right: 0;
     width: 100%;
   }
@@ -25,12 +26,13 @@ $main-menu-medium: $medium;
 .main-menu {
   @include list-reset;
 
-  border-bottom: 1px solid;
+  background-color: color('gray-300');
+  border-bottom: 1px solid color('gray-400');
   position: relative;
-  z-index: 10;
 
   @include medium {
     border-bottom: none;
+    background: transparent;
   }
 }
 
@@ -40,14 +42,14 @@ $main-menu-medium: $medium;
 
 /* UL (Nested) */
 .main-menu--sub {
+  background-color: color('gray-300');
   border-bottom: none;
   height: 0;
   overflow: hidden;
-  background-color: $near-white;
   width: 100%;
 
   @include medium {
-    background-color: $gray-lightest;
+    background-color: color('gray-300');
     display: none;
     height: auto;
     left: 0;
@@ -55,20 +57,17 @@ $main-menu-medium: $medium;
     position: absolute;
     top: 100%;
     width: 315px;
-    z-index: 1;
     font-size: 0.9rem;
   }
 
   &:hover {
     @include medium {
       .main-menu__link--sub {
-        color: $gray-light;
-
         &.active,
         &:active,
         &:hover {
-          color: $white;
-          background-color: $black;
+          color: color('white');
+          background-color: color('primary-500');
         }
       }
     }

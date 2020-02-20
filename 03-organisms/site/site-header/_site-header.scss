@@ -1,15 +1,41 @@
 .header {
   &__primary {
-    @include wrapper($v-padding: $space, $h-padding: $space);
+    @include wrapper;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: $space 0;
+    align-items: center;
+    border-bottom: color('gray-300') 1px solid;
+    padding: 0;
+
+    @include breakpoint($large) {
+      padding: $space 0;
+    }
   }
 
   &__branding {
+    padding: $space 0;
     margin-right: $space;
+    padding-left: $space;
     max-width: 300px;
+
+    img {
+      margin: ($space) 0;
+      width: 300px;
+    }
+  }
+
+  &__menu {
+    align-self: stretch;
+    display: flex;
+
+    @include breakpoint($medium) {
+      align-self: center;
+    }
+
+    > nav {
+      display: flex;
+    }
   }
 }

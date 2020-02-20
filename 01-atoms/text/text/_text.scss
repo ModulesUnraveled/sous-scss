@@ -7,23 +7,32 @@
 
 @mixin body-copy {
   font-family: $font-body;
-  font-size: 0.9rem;
-  line-height: 1.6em;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 body {
-  color: $gray;
-
   @include body-copy;
+
+  color: color('gray-800');
 }
 
 .paragraph {
   @include paragraph;
+
+  .lead {
+    display: block;
+
+    &::first-line {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .blockquote {
   font-style: italic;
-  border-left: solid 3px $color-border;
+  border-left: solid 3px color('gray-600');
   margin-left: 1em;
   padding-left: 1em;
 }

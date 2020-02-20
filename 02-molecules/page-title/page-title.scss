@@ -3,11 +3,16 @@
 
   flex: 0 0 100vw;
   margin-left: calc(-50vw + 50%);
-  background-color: $orange-dark;
 }
 
 .page-title {
   @include wrapper($v-padding: $space-double);
 
-  color: $white;
+  color: color('primary-500');
+  font-size: 3rem;
+  line-height: 1.1;
+
+  @include breakpoint($large) {
+    font-size: 4rem;
+  }
 }

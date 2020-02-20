@@ -1,118 +1,122 @@
-// Grayscale
-$white: white;
-$near-white: #f2f2f2;
-$gray-lightest: #e5e5e5;
-$gray-lighter: #ccc;
-$gray-light: #888;
-$gray: #666;
-$gray-dark: #4c4c4c;
-$gray-darker: #333;
-$black: black;
+$color: (
+  'primary-100': #c7e0f9,
+  'primary-200': #92c0f4,
+  'primary-300': #5992de,
+  'primary-400': #2f68be,
+  'primary-500': #003594,
+  'primary-600': #00287f,
+  'primary-700': #001e6a,
+  'primary-800': #001555,
+  'primary-900': #000f47,
+  'primary-transparent-100': rgba(0, 53, 148, 0.08),
+  'primary-transparent-200': rgba(0, 53, 148, 0.16),
+  'primary-transparent-300': rgba(0, 53, 148, 0.24),
+  'primary-transparent-400': rgba(0, 53, 148, 0.32),
+  'primary-transparent-500': rgba(0, 53, 148, 0.4),
+  'primary-transparent-600': rgba(0, 53, 148, 0.48),
+  'success-100': #e9f8cb,
+  'success-200': #d0f19a,
+  'success-300': #a4d762,
+  'success-400': #75b038,
+  'success-500': #3f7c0c,
+  'success-600': #306a08,
+  'success-700': #225906,
+  'success-800': #174703,
+  'success-900': #103b02,
+  'success-transparent-100': rgba(63, 124, 12, 0.08),
+  'success-transparent-200': rgba(63, 124, 12, 0.16),
+  'success-transparent-300': rgba(63, 124, 12, 0.24),
+  'success-transparent-400': rgba(63, 124, 12, 0.32),
+  'success-transparent-500': rgba(63, 124, 12, 0.4),
+  'success-transparent-600': rgba(63, 124, 12, 0.48),
+  'info-100': #c9eefa,
+  'info-200': #95d8f6,
+  'info-300': #5eb4e5,
+  'info-400': #358dcc,
+  'info-500': #035caa,
+  'info-600': #024792,
+  'info-700': #01357a,
+  'info-800': #002562,
+  'info-900': #001a51,
+  'info-transparent-100': rgba(3, 92, 170, 0.08),
+  'info-transparent-200': rgba(3, 92, 170, 0.16),
+  'info-transparent-300': rgba(3, 92, 170, 0.24),
+  'info-transparent-400': rgba(3, 92, 170, 0.32),
+  'info-transparent-500': rgba(3, 92, 170, 0.4),
+  'info-transparent-600': rgba(3, 92, 170, 0.48),
+  'warning-100': #fbeec9,
+  'warning-200': #f7db95,
+  'warning-300': #e8ba5d,
+  'warning-400': #d29735,
+  'warning-500': #b56a01,
+  'warning-600': #9b5400,
+  'warning-700': #824100,
+  'warning-800': #683000,
+  'warning-900': #562400,
+  'warning-transparent-100': rgba(181, 106, 1, 0.08),
+  'warning-transparent-200': rgba(181, 106, 1, 0.16),
+  'warning-transparent-300': rgba(181, 106, 1, 0.24),
+  'warning-transparent-400': rgba(181, 106, 1, 0.32),
+  'warning-transparent-500': rgba(181, 106, 1, 0.4),
+  'warning-transparent-600': rgba(181, 106, 1, 0.48),
+  'danger-100': #f9ded0,
+  'danger-200': #f4b8a3,
+  'danger-300': #de8370,
+  'danger-400': #bd5248,
+  'danger-500': #911a1a,
+  'danger-600': #7c131c,
+  'danger-700': #680d1c,
+  'danger-800': #54081b,
+  'danger-900': #45041b,
+  'danger-transparent-100': rgba(145, 26, 26, 0.08),
+  'danger-transparent-200': rgba(145, 26, 26, 0.16),
+  'danger-transparent-300': rgba(145, 26, 26, 0.24),
+  'danger-transparent-400': rgba(145, 26, 26, 0.32),
+  'danger-transparent-500': rgba(145, 26, 26, 0.4),
+  'danger-transparent-600': rgba(145, 26, 26, 0.48),
+  'white': white,
+  'gray-100': #f7faf9,
+  'gray-200': #eff5f5,
+  'gray-300': #dae2e2,
+  'gray-400': #bcc4c5,
+  'gray-500': #969ea0,
+  'gray-600': #6d8189,
+  'gray-700': #4b6573,
+  'gray-800': #2f495c,
+  'gray-900': #1c344c,
+  'gray-transparent-100': rgba(150, 158, 160, 0.08),
+  'gray-transparent-200': rgba(150, 158, 160, 0.16),
+  'gray-transparent-300': rgba(150, 158, 160, 0.24),
+  'gray-transparent-400': rgba(150, 158, 160, 0.32),
+  'gray-transparent-500': rgba(150, 158, 160, 0.4),
+  'gray-transparent-600': rgba(150, 158, 160, 0.48),
+  'black': black,
+);
 
-// Project
-$green-light: #3fd03f;
-$green: #35aa4e;
-// $green-dark: #2b8a31; // Brand color from wiki
-$green-dark: #29802f; // Darkened for sufficient contrast against white
-$blue-light: #68a2e3;
-$blue: #4180c7;
-$blue-dark: #0c62c2;
-$yellow: #ecdf13;
-$yellow-dark: #d8cb01;
-$orange: #fd880b;
-$orange-dark: #d86601;
+// Define a function for easily selecting colors from the map
+@function color($value) {
+  @return map-get($color, $value);
+}
 
-// Styleguide
+// Styles for the Component Library
 .sg-colors {
   display: flex;
   flex-wrap: wrap;
-}
 
-.sg-colors__list {
-  list-style: none;
-  margin: 1rem 0.5rem;
-  text-align: center;
-}
-
-.sg-colors__color {
-  padding: 4rem;
-
-  // Grayscale
-  &--white {
-    background-color: $white;
+  &__list {
+    list-style: none;
+    margin: 1rem 0.5rem;
+    text-align: center;
   }
 
-  &--near-white {
-    background-color: $near-white;
-  }
+  &__color {
+    padding: 4rem;
 
-  &--gray-lightest {
-    background-color: $gray-lightest;
-  }
-
-  &--gray-lighter {
-    background-color: $gray-lighter;
-  }
-
-  &--gray-light {
-    background-color: $gray-light;
-  }
-
-  &--gray {
-    background-color: $gray;
-  }
-
-  &--gray-dark {
-    background-color: $gray-dark;
-  }
-
-  &--gray-darker {
-    background-color: $gray-darker;
-  }
-
-  &--black {
-    background-color: $black;
-  }
-
-  // Branding
-  &--green-light {
-    background-color: $green-light;
-  }
-
-  &--green {
-    background-color: $green;
-  }
-
-  &--green-dark {
-    background-color: $green-dark;
-  }
-
-  &--blue-light {
-    background-color: $blue-light;
-  }
-
-  &--blue {
-    background-color: $blue;
-  }
-
-  &--blue-dark {
-    background-color: $blue-dark;
-  }
-
-  &--yellow {
-    background-color: $yellow;
-  }
-
-  &--yellow-dark {
-    background-color: $yellow-dark;
-  }
-
-  &--orange {
-    background-color: $orange;
-  }
-
-  &--orange-dark {
-    background-color: $orange-dark;
+    @each $name, $value in $color {
+      &--#{$name} {
+        background-color: $value;
+      }
+    }
   }
 }
 

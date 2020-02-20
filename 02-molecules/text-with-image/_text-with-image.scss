@@ -1,0 +1,25 @@
+.text-with-image {
+  margin: 0 0 1em;
+
+  &__image {
+    @include space-stack-l;
+
+    img {
+      width: 100%;
+    }
+
+    @include breakpoint($medium) {
+      float: right;
+      margin-left: $space-quintuple;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    &::first-line {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+  }
+}

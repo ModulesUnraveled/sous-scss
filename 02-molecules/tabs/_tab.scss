@@ -1,9 +1,9 @@
 .tabs__link,
 .tabs__link--local-tasks {
-  background-color: $near-white;
-  border: 1px solid $gray-lightest;
+  background-color: color('gray-200');
+  border: 1px solid color('gray-300');
   border-bottom: none;
-  color: $gray;
+  color: color('gray-700');
   display: block;
   font-size: 1.1rem;
   font-weight: 600;
@@ -13,7 +13,7 @@
   transition: color 0.3s;
 
   @include large {
-    border-bottom: 1px solid $gray-lightest;
+    border-bottom: 1px solid color('gray-300');
     border-left: none;
     display: inline-block;
     font-size: 1rem;
@@ -24,21 +24,21 @@
   }
 
   &:hover {
-    background-color: $gray-lightest;
-    color: $gray-darker;
+    background-color: color('gray-300');
+    color: color('gray-900');
   }
 
   &.is-active {
-    background-color: $gray;
-    border: 1px solid $gray;
-    color: $white;
+    background-color: color('gray-700');
+    border: 1px solid color('gray-700');
+    color: color('white');
 
     @include large {
-      background-color: $white;
-      border: 1px solid $gray-lightest;
-      border-bottom: 1px solid $gray;
+      background-color: color('white');
+      border: 1px solid color('gray-300');
+      border-bottom: 1px solid color('gray-700');
       border-left: none;
-      color: $gray;
+      color: color('gray-700');
     }
   }
 }

@@ -1,14 +1,20 @@
-$color-news--highlight-accent: $green-dark;
-$color-news--highlight-base: $white;
+$color-news--highlight-accent: color('gray-700');
+$color-news--highlight-base: color('white');
 
 .news-card {
   display: flex;
   flex-flow: column nowrap;
-  color: $gray-darker;
-  box-shadow: 1px 1px 2px 2px rgba($black, 0.15);
+  border-radius: 2px;
+  transition: all 0.15s;
+  border: 1px solid color('gray-300');
 
   &:hover {
-    box-shadow: 0px 1px 10px 0px rgba($black, 0.3);
+    box-shadow: 0 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802),
+      0 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+      0 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+      0 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
+      0 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
+      0 100px 80px rgba(0, 0, 0, 0.07);
   }
 
   &__content {
@@ -23,8 +29,6 @@ $color-news--highlight-base: $white;
 
   &__heading {
     @include heading-medium;
-
-    margin-bottom: 0;
   }
 
   &__heading-link {
@@ -44,7 +48,14 @@ $color-news--highlight-base: $white;
   }
 
   &__body {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  &__image {
+    img {
+      border-radius: 2px 2px 0 0;
+      width: 100%;
+    }
   }
 
   &__link {
@@ -81,22 +92,27 @@ $color-news--highlight-base: $white;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background: $color-news--highlight-accent;
-    margin: 1rem;
-    border-radius: 50%;
-    height: 3.5rem;
-    width: 3.5rem;
+    background: color('primary-500');
+    border-radius: 2px;
+    margin: 0.4rem -0.5rem 0 0;
+    padding: 1rem;
   }
 
   &__day {
+    font-size: 1.6rem;
     line-height: 1;
+  }
+
+  &__month {
+    text-transform: uppercase;
   }
 
   &__tag {
     @include space-inset-squish-s;
 
     margin: 0;
-    background: $color-news--highlight-accent;
+    background: color('gray-transparent-600');
+    border-radius: 0 2px 0 0;
     text-transform: uppercase;
   }
 }

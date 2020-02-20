@@ -1,11 +1,12 @@
 @mixin button(
-  $bg: $blue-dark,
-  $color: $white,
+  $bg: color('primary-400'),
+  $color: color('white'),
   $hoverBg: darken($bg, 10%),
-  $hoverColor: $white
+  $hoverColor: color('white')
 ) {
   background-color: $bg;
   border: none;
+  border-radius: 2px;
   color: $color;
   cursor: pointer;
   line-height: 1.4;
@@ -34,7 +35,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $white;
+    color: color('white');
   }
 }
 
@@ -42,12 +43,12 @@
   @include button;
 
   &--alt {
-    @include button($orange);
+    @include button(color('warning-600'));
     @include button-alt;
   }
 
   &--alt-2 {
-    @include button($green);
+    @include button(color('success-500'));
     @include button-alt-2;
   }
 }
