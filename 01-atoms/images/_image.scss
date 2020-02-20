@@ -9,6 +9,10 @@ picture {
   @include image;
 }
 
+.image--mb-space {
+  margin-bottom: $space;
+}
+
 figure {
   margin: 0; /* override normalize */
 }
