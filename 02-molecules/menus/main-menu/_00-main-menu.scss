@@ -4,6 +4,7 @@ $main-menu-medium: $medium;
 /* Nav */
 .main-nav {
   display: none;
+  z-index: 200;
 
   @include medium {
     display: block;
