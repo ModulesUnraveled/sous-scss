@@ -5,6 +5,10 @@
   text-transform: uppercase;
   border-radius: 2px;
 
+  &__button {
+    @include button;
+  }
+
   &--home {
     background: url('https://source.unsplash.com/PoE6Q48B-5k/1100x800')
       no-repeat center center;
