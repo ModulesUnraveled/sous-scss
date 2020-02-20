@@ -43,7 +43,7 @@
   @include button;
 
   &--alt {
-    @include button(color('warning-500'));
+    @include button(color('warning-600'));
     @include button-alt;
   }
 

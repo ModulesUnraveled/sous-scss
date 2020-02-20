@@ -28,7 +28,7 @@
     }
 
     .cta__button {
-      @include button(color('warning-500'));
+      @include button(color('warning-600'));
 
       position: relative;
     }
