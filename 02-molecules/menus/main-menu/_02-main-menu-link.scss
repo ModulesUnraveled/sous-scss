@@ -31,7 +31,7 @@
     }
 
     &::after {
-      color: $white;
+      color: color('white');
       display: inline-block;
       content: '>';
     }
@@ -42,7 +42,7 @@
     &.active,
     &:active,
     &:hover {
-      color: $white;
+      color: color('white');
 
       &::after {
         color: color('gray-600');
@@ -57,7 +57,7 @@
 
 /* A (Nested) */
 .main-menu__link--sub {
-  color: $gray-dark;
+  color: color('gray-dark');
   padding-left: $space-triple;
   font-weight: normal;
   font-size: 0.9rem;

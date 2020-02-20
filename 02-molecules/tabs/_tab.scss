@@ -3,7 +3,7 @@
   background-color: color('gray-200');
   border: 1px solid color('gray-300');
   border-bottom: none;
-  color: $gray;
+  color: color('gray');
   display: block;
   font-size: 1.1rem;
   font-weight: 600;
@@ -25,20 +25,20 @@
 
   &:hover {
     background-color: color('gray-300');
-    color: $gray-darker;
+    color: color('gray-darker');
   }
 
   &.is-active {
-    background-color: $gray;
-    border: 1px solid $gray;
-    color: $white;
+    background-color: color('gray');
+    border: 1px solid color('gray');
+    color: color('white');
 
     @include large {
-      background-color: $white;
+      background-color: color('white');
       border: 1px solid color('gray-300');
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid color('gray');
       border-left: none;
-      color: $gray;
+      color: color('gray');
     }
   }
 }

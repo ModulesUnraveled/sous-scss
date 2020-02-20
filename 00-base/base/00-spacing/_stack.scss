@@ -17,35 +17,3 @@
 @mixin space-stack-page {
   margin-bottom: $space-double;
 }
-
-@for $i from 0 through 7 {
-  .m-#{$i} {
-    margin: $space * $i;
-  }
-
-  .mt-#{$i} {
-    margin-top: $space * $i;
-  }
-
-  .mb-#{$i} {
-    margin-bottom: $space * $i;
-  }
-
-  .ml-#{$i} {
-    margin-left: $space * $i;
-  }
-
-  .mr-#{$i} {
-    margin-right: $space * $i;
-  }
-
-  .mx-#{$i} {
-    margin-left: $space * $i;
-    margin-right: $space * $i;
-  }
-
-  .my-#{$i} {
-    margin-top: $space * $i;
-    margin-bottom: $space * $i;
-  }
-}

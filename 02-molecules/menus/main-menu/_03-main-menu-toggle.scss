@@ -1,6 +1,7 @@
 /* Toggle */
 .toggle-expand {
   @include link;
+
   color: color('gray-800');
   align-self: stretch;
 
@@ -32,7 +33,7 @@
   line-height: 1;
 
   .toggle-expand--open & {
-    color: $white;
+    color: color('white');
   }
 }
 
@@ -59,7 +60,7 @@
   align-self: center;
 
   &::before {
-    color: $white;
+    color: color('white');
     content: 'X';
     display: block;
     font-size: 2.5rem;

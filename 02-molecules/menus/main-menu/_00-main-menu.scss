@@ -11,7 +11,7 @@ $main-menu-medium: $medium;
   }
 
   &--open {
-    background-color: $white;
+    background-color: color('white');
     display: block;
     left: 0;
     overflow-y: scroll;
@@ -68,7 +68,7 @@ $main-menu-medium: $medium;
         &.active,
         &:active,
         &:hover {
-          color: $white;
+          color: color('white');
           background-color: color('primary-500');
         }
       }

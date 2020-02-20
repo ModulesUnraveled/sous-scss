@@ -1,5 +1,5 @@
 /* Link */
-$color-link: $gray-darker;
+$color-link: color('gray-darker');
 $color-link--hover: color('gray-600');
 
 @mixin link {

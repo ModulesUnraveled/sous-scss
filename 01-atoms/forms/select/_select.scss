@@ -8,7 +8,7 @@
   &::after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 9px solid $gray-darker;
+    border-top: 9px solid color('gray-darker');
     content: ' ';
     position: absolute;
     top: 42%;
@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    border-color: $black;
+    border-color: color('black');
   }
 }
 
@@ -61,7 +61,7 @@
     appearance: none;
 
     &:focus {
-      border-color: $gray;
+      border-color: color('gray');
       border-radius: 0;
     }
   }

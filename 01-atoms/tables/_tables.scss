@@ -23,7 +23,7 @@ $table-border: color('gray-300');
 }
 
 .table__heading-cell {
-  color: $black;
+  color: color('black');
   font-weight: 700;
   padding: 1.2em;
   text-align: left;
@@ -31,7 +31,7 @@ $table-border: color('gray-300');
 
 .table__row {
   &:nth-child(odd) {
-    background-color: $white;
+    background-color: color('white');
   }
 
   /* Top Row - Non-BEM but always contained */

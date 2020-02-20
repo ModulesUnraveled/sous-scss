@@ -1,5 +1,5 @@
 .form-item {
-  color: $gray;
+  color: color('gray');
   margin-bottom: 1em;
   max-width: 32em;
 
@@ -23,7 +23,7 @@
   max-width: 100%;
 
   &:focus {
-    border-color: $black;
+    border-color: color('black');
   }
 
   &::-webkit-input-placeholder {

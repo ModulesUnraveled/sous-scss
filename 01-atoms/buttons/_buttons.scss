@@ -1,8 +1,8 @@
 @mixin button(
   $bg: color('primary-400'),
-  $color: $white,
+  $color: color('white'),
   $hoverBg: darken($bg, 10%),
-  $hoverColor: $white
+  $hoverColor: color('white')
 ) {
   background-color: $bg;
   border: none;
@@ -35,7 +35,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $white;
+    color: color('white');
   }
 }
 
