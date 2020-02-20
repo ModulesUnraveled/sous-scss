@@ -17,16 +17,19 @@ $main-width: 50%;
 .main-sidebar {
   margin-bottom: $space-double;
   flex: 0 1 100%;
+  order: 2;
 
   @include large {
     flex-basis: $sidebar-width;
-    order: 2;
     margin-bottom: 0;
   }
 }
 
 .main-content {
   flex: 1 1 100%;
+  &--with-sidebar {
+    @include space-stack-m;
+  }
 
   @include large {
     &--with-sidebar {
