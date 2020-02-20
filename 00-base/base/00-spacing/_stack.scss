@@ -2,6 +2,10 @@
   margin-bottom: $space;
 }
 
+@mixin space-stack-l {
+  margin-bottom: $space-double;
+}
+
 @mixin space-stack-none {
   margin-bottom: 0;
 }
