@@ -14,19 +14,3 @@ ul {
 ol {
   list-style-type: decimal;
 }
-
-.list-item {
-  margin-bottom: 0.2em;
-  padding-left: 1em;
-}
-
-/* TODO: BEM selectors should be applied to wysiwyg-created content */
-
-.text-long {
-  ol,
-  ul {
-    li {
-      @extend .list-item;
-    }
-  }
-}
