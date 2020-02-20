@@ -10,7 +10,7 @@
   padding-bottom: $space;
   position: relative;
 
-  &::after {
+  &::before {
     content: '';
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
     position: absolute;
@@ -18,15 +18,14 @@
     left: 0;
     right: 0;
     height: 200px;
-    z-index: 0;
   }
 
   &__content {
     @include wrapper;
 
+    position: relative;
     display: flex;
     justify-content: center;
-    z-index: 10;
   }
 
   &__content-inner {
