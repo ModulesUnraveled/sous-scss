@@ -1,6 +1,6 @@
 .footer {
   background-color: color('gray-800');
-  padding: ($space * 2) 0;
+  padding: ($space-double) 0;
 
   &__inner {
     @include wrapper;

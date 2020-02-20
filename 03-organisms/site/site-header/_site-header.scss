@@ -1,6 +1,6 @@
 .header {
   &__primary {
-    @include wrapper($v-padding: 0, $h-padding: 0);
+    @include wrapper;
 
     display: flex;
     flex-flow: row nowrap;
