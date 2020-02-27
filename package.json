@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ModulesUnraveled/western-up-scss.git"
+    "url": "git+https://github.com/emulsify-ds/western-up-scss.git"
   },
   "author": "Brian Lewis",
   "bugs": {
-    "url": "https://github.com/ModulesUnraveled/western-up-scss/issues"
+    "url": "https://github.com/emulsify-ds/western-up-scss/issues"
   },
-  "homepage": "https://github.com/ModulesUnraveled/western-up-scss#readme"
+  "homepage": "https://github.com/emulsify-ds/western-up-scss#readme"
 }
