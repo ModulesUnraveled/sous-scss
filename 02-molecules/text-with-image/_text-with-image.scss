@@ -11,6 +11,7 @@
     @include breakpoint($medium) {
       float: right;
       margin-left: $space-quintuple;
+      max-width: 500px;
     }
   }
 
