@@ -1,24 +1,39 @@
-// This css is paired with the js in `background-image.js` to allow us
-// to use fully responsive background images that are not possible with css alone.
-// Read that file for a little more detail.
-[data-responsive-background-image] {
-  background-size: cover;
-  background-position: center center;
+@mixin background-image {
+  & {
+    position: relative;
+    overflow: hidden;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    position: relative;
+  }
 }
 
-[data-responsive-background-image--src] {
-  display: none;
+.background-image {
+  @include background-image;
 }
 
 .cl-example {
-  [data-responsive-background-image] {
+  .background-image {
     padding-bottom: 56.25%; // 16:9 ratio
   }
 
   .background-image--with-content {
+    @include background-image;
     @include space-inset-l;
 
-    div {
+    &__content {
       @include space-inset-m;
 
       background-color: color('gray-300');
