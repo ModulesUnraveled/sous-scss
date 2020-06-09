@@ -1,4 +1,5 @@
 .hero {
+  @include background-image;
   @include space-stack-m;
 
   flex: 0 0 100vw;
@@ -8,9 +9,8 @@
   display: flex;
   align-items: flex-end;
   padding-bottom: $space;
-  position: relative;
 
-  &::before {
+  &::after {
     content: '';
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
     position: absolute;
@@ -24,8 +24,10 @@
     @include wrapper;
 
     position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
+    color: color('white');
   }
 
   &__content-inner {
