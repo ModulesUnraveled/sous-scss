@@ -5,6 +5,7 @@
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "cross-env": "5.0.5",
+    "normalize.css": "^8.0.1",
     "stylelint-config-prettier": "^8.0.1"
   },
   "scripts": {
