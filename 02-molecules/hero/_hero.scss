@@ -4,9 +4,10 @@
   flex: 0 0 100vw;
   margin-left: calc(-50vw + 50%);
   margin-bottom: 4rem;
-  min-height: 70vh;
+  min-height: 500px;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
   padding-bottom: $space;
   position: relative;
 
@@ -46,5 +47,16 @@
     @include breakpoint($large) {
       font-size: 6rem;
     }
+  }
+}
+
+.hero__image {
+  height: 100%;
+  width: 100%;
+
+  img,
+  picture {
+    object-fit: cover;
+    width: 100%;
   }
 }
