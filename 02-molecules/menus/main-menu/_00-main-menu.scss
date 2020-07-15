@@ -8,6 +8,7 @@ $main-menu-medium: $medium;
 
   @include medium {
     display: block;
+    position: relative;
   }
 
   &--open {
@@ -63,6 +64,7 @@ $main-menu-medium: $medium;
   &:hover {
     @include medium {
       .main-menu__link--sub {
+
         &.active,
         &:active,
         &:hover {
@@ -81,6 +83,7 @@ $main-menu-medium: $medium;
 
 .main-menu--sub-2 {
   @include medium {
-    display: none; /* Never shown on large screens */
+    display: none;
+    /* Never shown on large screens */
   }
 }
