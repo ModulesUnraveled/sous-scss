@@ -1,6 +1,6 @@
 {
   "name": "western-up-scss",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Scss style files for a fictitious Western University of Pennsylvania install",
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
